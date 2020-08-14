@@ -7,3 +7,7 @@ h1{
     color: red;
     /* text-decoration: underline; */
 }
+img{
+    width: 50%;
+    float: left;
+}
