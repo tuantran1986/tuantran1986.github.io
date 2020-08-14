@@ -10,8 +10,9 @@ h1{
 img{
     width: 50%;
     /* float: left; */
-    display: inline-block;
+    /* display: inline-block; */
 }
 .anh {
     text-align: center;
+
 }
