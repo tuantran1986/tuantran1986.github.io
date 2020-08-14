@@ -9,5 +9,9 @@ h1{
 }
 img{
     width: 50%;
-    float: left;
+    /* float: left; */
+    display: inline-block;
+}
+.anh {
+    text-align: center;
 }
