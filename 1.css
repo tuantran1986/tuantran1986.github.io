@@ -1,18 +1,148 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
 }
 
-h1{
-    text-align: center;
-    color: red;
-    /* text-decoration: underline; */
+/* DONG THU 1 : MENU :  */
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    border-bottom: 2px solid black;
 }
-img{
-    width: 50%;
-    /* float: left; */
-    /* display: inline-block; */
-}
-.anh {
-    text-align: center;
 
+a.navbar-brand.dong1trai {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+a.nav-link u{
+    color: #f70d18;
+    font-size: 20px;
+    font-weight: bold;
+}  
+img.anhlogo {
+  width: 80px;
+  border-radius: 40px;
+}
+
+span.textlogo1 {
+  color: black;
+}
+span.textlogo2 {
+  color: #f70d18;
+  margin-left: -10px;
+}
+a.navbar-brand.dong1trai:hover {
+  text-decoration: underline;
+  color: #f70d18;
+}
+a.navbar-brand.dong1trai:hover img.anhlogo {
+    padding:2px;
+    border: 2px dashed #f70d18;
+  }
+
+span.chuden {
+  color: black;
+  font-size: 12px;
+}
+
+li.nav-item {
+  margin-left: 35px;
+}
+
+a.nav-link:hover u,
+a.nav-link:hover u span {
+  color: white;
+  text-shadow: 2px 2px 4px #000000 , 0 0 4px red;
+}
+
+a.nav-link:active u,a.nav-link:active u span {
+  color: #f70d18;
+  text-shadow: 2px 2px 4px #000000;
+}
+/* HET - DONG THU 1 */
+
+
+/* DONG THU 2 */
+img.phan2{
+    width: 100%;
+    border-bottom:2px solid black;
+}
+/* HET - DONG THU 2 */
+
+/* DONG THU 3 */
+
+/* HET - DONG THU 3 */
+
+/* DONG THU 4 */
+
+/* HET - DONG THU 4 */
+
+
+
+/**************************** RESPONSIVE *****************************/
+/* BUTTON - LOGO */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  li.nav-item {
+    justify-content: center;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* MENU */
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .collapse:not(.show) {
+    display: inline-block !important;
+  }
+
+  /* BUTTON - MENU */
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  li.nav-item {
+    margin-left: 10px;
+  }
+  a.navbar-brand.dong1trai {
+    font-size: 30px;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .navbar-expand-lg .navbar-nav {
+    justify-content: center;
+  }
+}
+
+/* RESPONSIVE */
+
+/* RESPONSIVE */
+/* MENU */
+@media (max-width: 768px) {
+  .navbar-nav {
+    background-color: #e8eaea;
+    text-align: center;
+  }
+  li.nav-item {
+    margin-left: 0px;
+  }
+  li.nav-item:hover {
+    background-color: #f70d18;
+    border: 1px dashed white;
+  }
 }
