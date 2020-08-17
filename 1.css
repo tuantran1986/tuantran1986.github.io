@@ -82,6 +82,7 @@ h1.phan3 {
   text-shadow: 4px 2px 8px #000000, 0 0 4px red;
   text-decoration: underline;
   font-size: 60px;
+  margin-bottom: 50px;
 }
 h1.phan3:hover {
   text-decoration: none;
@@ -90,11 +91,88 @@ h1.phan3:hover {
 /* HET - DONG THU 3 */
 
 /* DONG THU 4 */
+.phan4.gioithieu.muctieu {
+  margin-bottom: 50px;
+}
+.phan4.gioithieu.muctieu img.anhthe {
+  width: 100%;
+  max-height: 310px;
+}
 
+.phan4.gioithieu.muctieu h3 {
+  margin-bottom: 30px;
+}
+.phan4.gioithieu.muctieu h3 u {
+  color: #f70d18;
+  font-size: 40px;
+  font-weight: bold;
+}
+.phan4.gioithieu.muctieu h3 u span {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.phan4.gioithieu.muctieu ul li {
+  list-style-type: none;
+  color: black;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+span.dauchamdo {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  background-color: #f70d18;
+}
 /* HET - DONG THU 4 */
 
 /* DONG THU 5 */
+.phan5{
+  margin-bottom: 50px;
+  height: 500px;
+  color:white;
+}
+.phan5 ul li{
+  list-style-type: none;
+}
+.phan5 h3 {
+  padding:20px 0px;
+}
+.phan5 h3 u {
+  color: white;
+  text-shadow: 2px 2px 4px #000000, 0 0 4px white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.phan5 h3 u span {
+  color: black;
+  text-shadow: 2px 2px 4px white, 0 0 4px red;
+  font-size: 30px;
+  font-weight: bold;
+}
+.phan5 ul li {
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+span.dauchamtrang {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  background-color: white;
+}
+.phan5 .hoctap{
+  background-color: #C63A3D;
+}
 
+.phan5 .lamviec{
+  background-color:#CE3F45;
+}
 /* HET - DONG THU 5 */
 
 /* DONG THU 6 */
@@ -175,7 +253,7 @@ h1.phan3:hover {
     margin-left: 0px;
   }
   li.nav-item:hover {
-    background-color: #f70d18;
+    background-color: #CE3F45;
     border: 1px dashed white;
   }
 
@@ -189,9 +267,29 @@ h1.phan3:hover {
   }
   span.textlogo2 {
     margin-left: -5px;
-}
+  }
   /* DONG 3 */
   h1.phan3 {
     font-size: 30px;
+  }
+
+  /* DONG THU 4 */
+  .phan4.gioithieu.muctieu img.anhthe {
+    max-height: none;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+  }
+  .phan4.gioithieu.muctieu ul li {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+
+  /* DONG THU 5 */
+  .phan5 ul li {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 0px;
   }
 }
