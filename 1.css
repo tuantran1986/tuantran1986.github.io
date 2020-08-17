@@ -6,7 +6,7 @@
 
 /* DONG THU 1 : MENU :  */
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 a.navbar-brand.dong1trai {
@@ -14,16 +14,16 @@ a.navbar-brand.dong1trai {
   font-weight: bold;
 }
 
-a.nav-link u{
-    color: #f70d18;
-    font-size: 20px;
-    font-weight: bold;
-}  
 img.anhlogo {
   width: 80px;
   border-radius: 40px;
 }
 
+a.nav-link u {
+  color: #f70d18;
+  font-size: 20px;
+  font-weight: bold;
+}
 span.textlogo1 {
   color: black;
 }
@@ -31,14 +31,15 @@ span.textlogo2 {
   color: #f70d18;
   margin-left: -10px;
 }
+
 a.navbar-brand.dong1trai:hover {
   text-decoration: underline;
   color: #f70d18;
 }
 a.navbar-brand.dong1trai:hover img.anhlogo {
-    padding:2px;
-    border: 2px dashed #f70d18;
-  }
+  padding: 2px;
+  border: 2px dashed #f70d18;
+}
 
 span.chuden {
   color: black;
@@ -49,27 +50,42 @@ li.nav-item {
   margin-left: 35px;
 }
 
+ul.navbar-nav li.nav-item:first-child {
+  margin-left: 5px;
+}
+
 a.nav-link:hover u,
 a.nav-link:hover u span {
   color: white;
-  text-shadow: 2px 2px 4px #000000 , 0 0 4px red;
+  text-shadow: 2px 2px 4px #000000, 0 0 4px red;
 }
 
-a.nav-link:active u,a.nav-link:active u span {
+a.nav-link:active u,
+a.nav-link:active u span {
   color: #f70d18;
   text-shadow: 2px 2px 4px #000000;
 }
 /* HET - DONG THU 1 */
 
-
 /* DONG THU 2 */
-img.phan2{
-    width: 100%;
-    border-bottom:2px solid black;
+img.phan2 {
+  width: 100%;
+  border-bottom: 2px solid black;
 }
 /* HET - DONG THU 2 */
 
 /* DONG THU 3 */
+h1.phan3 {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 2px 8px #000000, 0 0 4px red;
+  text-decoration: underline;
+  font-size: 60px;
+}
+h1.phan3:hover {
+  text-decoration: none;
+}
 
 /* HET - DONG THU 3 */
 
@@ -77,7 +93,21 @@ img.phan2{
 
 /* HET - DONG THU 4 */
 
+/* DONG THU 5 */
 
+/* HET - DONG THU 5 */
+
+/* DONG THU 6 */
+
+/* HET - DONG THU 6 */
+
+/* DONG THU 7 */
+
+/* HET - DONG THU 7 */
+
+/* DONG THU 8 */
+
+/* HET - DONG THU 8 */
 
 /**************************** RESPONSIVE *****************************/
 /* BUTTON - LOGO */
@@ -127,6 +157,9 @@ img.phan2{
   .navbar-expand-lg .navbar-nav {
     justify-content: center;
   }
+  h1.phan3 {
+    font-size: 40px;
+  }
 }
 
 /* RESPONSIVE */
@@ -144,5 +177,21 @@ img.phan2{
   li.nav-item:hover {
     background-color: #f70d18;
     border: 1px dashed white;
+  }
+
+  /* DONG 2 */
+  img.anhlogo {
+    width: 60px;
+    border-radius: 30px;
+  }
+  a.navbar-brand.dong1trai {
+    font-size: 24px;
+  }
+  span.textlogo2 {
+    margin-left: -5px;
+}
+  /* DONG 3 */
+  h1.phan3 {
+    font-size: 30px;
   }
 }
