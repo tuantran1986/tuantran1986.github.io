@@ -439,7 +439,6 @@ h5.tieudeProject {
 .lienhe.phan8 .khoilienhe:last-child {
   margin-right: 0%;
 }
-
 .lienhe.phan8 .khoilienhe i.fa {
   padding-top: 17px;
   font-size: 40px;
@@ -484,6 +483,75 @@ footer h1 {
   font-weight: bold;
   border-top: 2px solid black;
 }
+
+footer .nutlendau a i.fas {
+  position: fixed;
+  z-index: 10;
+  bottom: 15px;
+  right: 10px;
+  padding-top: 17px;
+  padding-left: 20px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000, 0 0 4px white, 0 0 6px red;
+  background-color: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  border: 3px dashed #ce3f45;
+}
+
+footer .menusuon {
+  position: fixed;
+  z-index: 10;
+  bottom: 100px;
+  right: 10px;
+  width: 150px;
+  height: 202px;
+
+  background-color: #f8f9fa;
+  border: 1px dashed;
+  opacity: 0;
+}
+
+footer .menusuon ul li {
+  list-style-type: none;
+  padding: 5px;
+  width: 100%;
+}
+
+footer .menusuon ul li a u {
+  color: #f70d18;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .menusuon ul li a u span {
+  color: black;
+  font-size: 12px;
+}
+/* HOVER */
+footer .nutlendau a:hover i.fas {
+  border: 3px solid #ce3f45;
+  transform: scale(1.1);
+  color: yellow;
+}
+
+footer .menusuon ul li:hover a u,
+footer .menusuon ul li:hover a u span {
+  color: white;
+  text-shadow: 2px 2px 4px #000000, 0 0 4px red;
+}
+
+footer .menusuon ul li:hover {
+  background-color: #ce3f45;
+  border: 1px dashed white;
+}
+/* HOVER */
+footer .nutlendau:hover .menusuon {
+  opacity: 1;
+}
+
+
 /* HET - DONG THU 10 */
 
 /**************************** RESPONSIVE *****************************/
