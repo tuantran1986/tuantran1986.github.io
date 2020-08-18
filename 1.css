@@ -1,6 +1,7 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  border: none;
   font-family: "Roboto Slab", serif;
 }
 
@@ -129,16 +130,16 @@ span.dauchamdo {
 /* HET - DONG THU 4 */
 
 /* DONG THU 5 */
-.phan5{
+.phan5 {
   margin-bottom: 50px;
   height: 500px;
-  color:white;
+  color: white;
 }
-.phan5 ul li{
+.phan5 ul li {
   list-style-type: none;
 }
 .phan5 h3 {
-  padding:20px 0px;
+  padding: 20px 0px;
 }
 .phan5 h3 u {
   color: black;
@@ -166,16 +167,152 @@ span.dauchamtrang {
   margin: 10px;
   background-color: white;
 }
-.phan5 .hoctap{
-  background-color: #C63A3D;
+.phan5 .hoctap {
+  background-color: #c63a3d;
 }
 
-.phan5 .lamviec{
-  background-color:#CE3F45;
+.phan5 .lamviec {
+  background-color: #ce3f45;
 }
 /* HET - DONG THU 5 */
 
-/* DONG THU 6 */
+/* DONG THU 6 : TIÊU ĐỀ */
+.phan6.tieude{
+  text-align: center;
+}
+    .phan6.tieude h3 {
+      padding: 20px 0px;
+    }
+    .phan6.tieude h3 u {
+      color: black;
+      text-shadow: 2px 2px 4px white, 0 0 4px red;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .phan6.tieude h3 u span {
+      color: white;
+      text-shadow: 2px 2px 4px #000000, 0 0 4px white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+/* DONG THU 6 : NỘI DUNG - DÀN TRANG*/
+.phan6.kynang {
+  width: 992px;
+  margin: auto;
+  /* DÀN TRANG = FLEX */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.phan6.kynang article.ngonngu {
+  border: 1px solid black;
+  background-color: white;
+  margin: 10px;
+  /*	DINH VI	*/
+  position: relative;
+  text-align: center;
+  width: 200px;
+  height: 180px;
+}
+
+/*	HOVER - HIỆU ỨNG	*/
+.phan6.kynang article.ngonngu:hover div.gradient {
+  opacity: 1;
+}
+.phan6.kynang article.ngonngu:hover h3.chuto {
+  top: 40%;
+  opacity: 1;
+  text-decoration: underline;
+}
+.phan6.kynang article.ngonngu:hover p.chunho {
+  top: 60%; /*dịch chuyển*/
+  transform: scale(1); /*làm to*/
+  opacity: 1; /*hiện ra*/
+}
+.phan6.kynang article.ngonngu:hover div.vien {
+  opacity: 1;
+}
+
+/*  */
+.phan6.kynang article.ngonngu img {
+  /*	DINH VI	*/
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+  /* margin: 10px; */
+  padding: 5%;
+}
+.phan6.kynang article.ngonngu div.gradient {
+  /*	DINH VI	*/
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+  /*	GRADIENT	*/
+  background-image: linear-gradient(45deg,white ,black,  #ce3f45,black,   #ce3f45 ,black, white);
+  /*	BAN DAU AN DI + Ở DƯỚI*/
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.2s;
+}
+.phan6.kynang article.ngonngu h3.chuto {
+  /*	DINH VI	*/
+  position: absolute;
+  top: 60%;
+  /*left: 0%;*/
+  z-index: 2;
+
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+
+  /*	BAN DAU AN DI + Ở DƯỚI = top */
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.4s;
+}
+.phan6.kynang article.ngonngu p.chunho {
+  /*	DINH VI	*/
+  position: absolute;
+  top: 80%;
+  z-index: 3;
+
+  color: white;
+  font-size: 14px;
+  margin: 30px;
+
+  /*	BAN DAU AN DI + THU NHỎ	+ Ở DƯỚI = top */
+  opacity: 0;
+  transform: scale(0.2);
+  transition: 0.5s;
+  transition-delay: 0.6s;
+}
+.phan6.kynang article.ngonngu div.vien {
+  /*	DINH VI	*/
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 4;
+
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+
+  border: 5px solid  #ce3f45;
+  /*	BAN DAU AN DI */
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.6s;
+}
 
 /* HET - DONG THU 6 */
 
@@ -253,7 +390,7 @@ span.dauchamtrang {
     margin-left: 0px;
   }
   li.nav-item:hover {
-    background-color: #CE3F45;
+    background-color: #ce3f45;
     border: 1px dashed white;
   }
 
