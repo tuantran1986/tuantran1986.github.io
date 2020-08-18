@@ -5,6 +5,27 @@
   font-family: "Roboto Slab", serif;
 }
 
+/* TIÊU ĐỀ - CHUNG */
+.tieude {
+  text-align: center;
+}
+.tieude h3 {
+  padding: 20px 0px;
+}
+.tieude h3 u {
+  color: black;
+  text-shadow: 2px 2px 4px white, 0 0 4px red;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tieude h3 u span {
+  color: white;
+  text-shadow: 2px 2px 4px #000000, 0 0 4px white;
+  font-size: 40px;
+  font-weight: bold;
+}
+/* HẾT : TIÊU ĐỀ - CHUNG */
+
 /* DONG THU 1 : MENU :  */
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   border-bottom: 2px solid black;
@@ -178,24 +199,7 @@ span.dauchamtrang {
 
 /* DONG THU 6 */
 /* DONG THU 6 phan 1 : TIÊU ĐỀ */
-.phan6.tieude {
-  text-align: center;
-}
-.phan6.tieude h3 {
-  padding: 20px 0px;
-}
-.phan6.tieude h3 u {
-  color: black;
-  text-shadow: 2px 2px 4px white, 0 0 4px red;
-  font-size: 30px;
-  font-weight: bold;
-}
-.phan6.tieude h3 u span {
-  color: white;
-  text-shadow: 2px 2px 4px #000000, 0 0 4px white;
-  font-size: 40px;
-  font-weight: bold;
-} /* hết - DONG THU 6 phan 1 : TIÊU ĐỀ */
+/* hết - DONG THU 6 phan 1 : TIÊU ĐỀ */
 /* DONG THU 6 phan 2 : NỘI DUNG - DÀN TRANG*/
 .phan6.kynang {
   width: 992px;
@@ -327,6 +331,92 @@ span.dauchamtrang {
 /* HET - DONG THU 6 */
 
 /* DONG THU 7 */
+.phan7.noidung a {
+  text-decoration: none;
+  position: relative;
+}
+
+.phan7.noidung a .gradient {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+  /*	GRADIENT	*/
+  background-image: linear-gradient(
+    45deg,
+    white,
+    black,
+    #ce3f45,
+    black,
+    #ce3f45,
+    black,
+    white
+  );
+  /*	BAN DAU HIEN THI */
+  opacity: 1;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.phan7.noidung a .vienProject {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+
+  width: 90%;
+  height: 80%;
+  margin: 5%;
+  border-bottom: 3px dashed white;
+  /*	BAN DAU MỜ */
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.phan7.noidung a .chu {
+  position: absolute;
+  top: 45%;
+  left: 0px;
+  z-index: 4;
+
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  text-shadow: 2px 2px 4px #000000, 0 0 4px red, 0 0 6px yellow;
+  /*	BAN DAU MỜ */
+  opacity: 1;
+  transition: 0.5s;
+}
+
+h5.tieudeProject {
+  color: black;
+  text-shadow: 2px 2px 4px #000000, 0 0 4px white, 0 0 6px red;
+  opacity: 0;
+  transition: 1s;
+  transform:rotate(0deg) scale(0);
+}
+
+/* XỬ LÝ - HOVER */
+.phan7.noidung a:hover .gradient{
+  opacity: 0;
+}
+.phan7.noidung a:hover .chu{
+  top: 80%;
+  opacity: 0;
+  transform: scale(0.5);
+}
+.phan7.noidung a:hover .vienProject{
+  opacity: 0;
+  transform: scaleX(0.5);
+}
+.phan7.noidung a:hover h5.tieudeProject{
+  transform:rotate(1080deg) scale(1);
+  opacity: 1;
+}
 
 /* HET - DONG THU 7 */
 
@@ -394,7 +484,7 @@ span.dauchamtrang {
 /* RESPONSIVE */
 
 /* RESPONSIVE */
-@media (max-width: 768px){
+@media (max-width: 768px) {
   /* MENU */
   .navbar-nav {
     background-color: #e8eaea;
@@ -443,7 +533,7 @@ span.dauchamtrang {
     font-style: italic;
     margin-bottom: 0px;
   }
-    /* DONG THU 6 phan 2 : NỘI DUNG - DÀN TRANG*/
+  /* DONG THU 6 phan 2 : NỘI DUNG - DÀN TRANG*/
   .phan6.kynang {
     width: 100%;
     justify-content: space-around;
@@ -452,10 +542,8 @@ span.dauchamtrang {
     width: 180px;
     height: 160px;
   }
-  
 }
 
 /* RESPONSIVE */
 @media (max-width: 567px) {
- 
 }
