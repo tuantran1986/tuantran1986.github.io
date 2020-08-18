@@ -5,6 +5,10 @@
   font-family: "Roboto Slab", serif;
 }
 
+.clrfloat {
+  clear: both;
+}
+
 /* TIÊU ĐỀ - CHUNG - tất cả các phần */
 .tieude {
   text-align: center;
@@ -386,7 +390,6 @@ span.dauchamtrang {
   z-index: 4;
 
   width: 100%;
-  height: 100%;
 
   color: white;
   text-shadow: 2px 2px 4px #000000, 0 0 4px red, 0 0 6px yellow;
@@ -438,7 +441,7 @@ h5.tieudeProject {
 }
 
 .lienhe.phan8 .khoilienhe i.fa {
-  padding-top: 15px;
+  padding-top: 17px;
   font-size: 40px;
 
   color: white;
@@ -459,6 +462,12 @@ h5.tieudeProject {
   text-shadow: 2px 2px 4px #000000, 0 0 4px black, 0 0 6px red;
   text-decoration: none;
 }
+
+.lienhe.phan8 .khoilienhe:hover i.fa {
+  border: 3px solid #ce3f45;
+  transform: scale(1.1);
+  color: yellow;
+}
 /* HET - DONG THU 8 */
 
 /* DONG THU 9 */
@@ -466,7 +475,15 @@ h5.tieudeProject {
 /* HET - DONG THU 9 */
 
 /* DONG THU 10 */
-
+footer h1 {
+  padding: 30px;
+  background-color: #b5b3b3;
+  color: black;
+  text-shadow: 2px 2px 4px white, 0 0 4px red;
+  font-size: 30px;
+  font-weight: bold;
+  border-top: 2px solid black;
+}
 /* HET - DONG THU 10 */
 
 /**************************** RESPONSIVE *****************************/
@@ -604,8 +621,7 @@ h5.tieudeProject {
     height: 40px;
     border-radius: 20px;
     border: 1px dashed #ce3f45;
-
-  }  
+  }
   .lienhe.phan8 .khoilienhe h5,
   .lienhe.phan8 .khoilienhe h5 a {
     font-size: 8px;
@@ -616,5 +632,4 @@ h5.tieudeProject {
 
 /* RESPONSIVE */
 @media (max-width: 567px) {
-
 }
