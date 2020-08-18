@@ -176,7 +176,9 @@ span.dauchamtrang {
 }
 /* HET - DONG THU 5 */
 
-/* DONG THU 6 : TIÊU ĐỀ */
+
+/* DONG THU 6 */
+/* DONG THU 6 phan 1 : TIÊU ĐỀ */
 .phan6.tieude{
   text-align: center;
 }
@@ -194,8 +196,8 @@ span.dauchamtrang {
       text-shadow: 2px 2px 4px #000000, 0 0 4px white;
       font-size: 40px;
       font-weight: bold;
-    }
-/* DONG THU 6 : NỘI DUNG - DÀN TRANG*/
+    }    /* hết - DONG THU 6 phan 1 : TIÊU ĐỀ */
+/* DONG THU 6 phan 2 : NỘI DUNG - DÀN TRANG*/
 .phan6.kynang {
   width: 992px;
   margin: auto;
@@ -312,7 +314,7 @@ span.dauchamtrang {
   opacity: 0;
   transition: 0.3s;
   transition-delay: 0.6s;
-}
+} /* hết - DONG THU 6 phan 2 : nội dung */
 
 /* HET - DONG THU 6 */
 
