@@ -5,7 +5,7 @@
   font-family: "Roboto Slab", serif;
 }
 
-/* TIÊU ĐỀ - CHUNG */
+/* TIÊU ĐỀ - CHUNG - tất cả các phần */
 .tieude {
   text-align: center;
 }
@@ -24,7 +24,7 @@
   font-size: 40px;
   font-weight: bold;
 }
-/* HẾT : TIÊU ĐỀ - CHUNG */
+/* HẾT : TIÊU ĐỀ - CHUNG - tất cả các phần */
 
 /* DONG THU 1 : MENU :  */
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -331,6 +331,9 @@ span.dauchamtrang {
 /* HET - DONG THU 6 */
 
 /* DONG THU 7 */
+.phan7.noidung {
+  margin-bottom: 50px;
+}
 .phan7.noidung a {
   text-decoration: none;
   position: relative;
@@ -397,28 +400,71 @@ h5.tieudeProject {
   text-shadow: 2px 2px 4px #000000, 0 0 4px white, 0 0 6px red;
   opacity: 0;
   transition: 1s;
-  transform:rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
 }
 
 /* XỬ LÝ - HOVER */
-.phan7.noidung a:hover .gradient{
+.phan7.noidung a:hover .gradient {
   opacity: 0;
 }
-.phan7.noidung a:hover .chu{
-  top: 80%;
+.phan7.noidung a:hover .chu {
+  top: 60%;
   opacity: 0;
   transform: scale(0.5);
 }
-.phan7.noidung a:hover .vienProject{
+.phan7.noidung a:hover .vienProject {
   opacity: 0;
   transform: scaleX(0.5);
 }
-.phan7.noidung a:hover h5.tieudeProject{
-  transform:rotate(1080deg) scale(1);
+.phan7.noidung a:hover h5.tieudeProject {
+  transform: rotate(1080deg) scale(1);
   opacity: 1;
 }
 
 /* HET - DONG THU 7 */
+
+/* DONG THU 8 */
+.lienhe.phan8 {
+  width: 50%;
+  margin: 40px auto;
+}
+.lienhe.phan8 .khoilienhe {
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+}
+.lienhe.phan8 .khoilienhe:last-child {
+  margin-right: 0%;
+}
+
+.lienhe.phan8 .khoilienhe i.fa {
+  padding-top: 15px;
+  font-size: 40px;
+
+  color: white;
+  text-shadow: 2px 2px 4px #000000, 0 0 4px white, 0 0 6px red;
+  background-color: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+
+  border: 5px dashed #ce3f45;
+}
+
+.lienhe.phan8 .khoilienhe h5,
+.lienhe.phan8 .khoilienhe h5 a {
+  padding-top: 10px;
+  font-size: 12px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000, 0 0 4px black, 0 0 6px red;
+  text-decoration: none;
+}
+
+/* HET - DONG THU 8 */
+
+/* DONG THU 8 */
+
+/* HET - DONG THU 8 */
 
 /* DONG THU 8 */
 
@@ -478,6 +524,10 @@ h5.tieudeProject {
   /* DONG THU 6 phan 2 : NỘI DUNG - DÀN TRANG*/
   .phan6.kynang {
     width: 100%;
+  }
+
+  .lienhe.phan8 {
+    width: 60%;
   }
 }
 
@@ -541,6 +591,10 @@ h5.tieudeProject {
   .phan6.kynang article.ngonngu {
     width: 180px;
     height: 160px;
+  }
+
+  .lienhe.phan8 {
+    width: 80%;
   }
 }
 
