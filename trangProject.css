@@ -2,5 +2,11 @@
     text-align: center;
 }
 .thongbao img{
-    width: 500px;
+    width: 400px;
+}
+
+@media (max-width: 768px) {
+    .thongbao img {
+        width: 100%;
+    }
 }
