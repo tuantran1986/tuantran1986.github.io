@@ -511,7 +511,9 @@ footer .menusuon {
 
   background-color: #f8f9fa;
   border: 1px dashed;
-  opacity: 0;
+  /* opacity: 0; */
+  visibility: hidden;
+  transition:0.2s;
 }
 
 footer .menusuon ul li {
@@ -548,7 +550,8 @@ footer .menusuon ul li:hover {
 }
 /* HOVER */
 footer .nutlendau:hover .menusuon {
-  opacity: 1;
+  /* opacity: 1; */
+  visibility: visible;
 }
 
 
