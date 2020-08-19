@@ -470,12 +470,19 @@ h5.tieudeProject {
   width: 100%;
 }
 
+.nenxamcuoi{
+  background-color:#b5b3b3;
+}
+.nenxamcuoi h3.bomargin{
+  margin:0;
+}
+
 /* HET - DONG THU 9 */
 
 /* DONG THU 10 */
 footer h1 {
   padding: 30px;
-  background-color: #b5b3b3;
+  background-color: gray;
   color: white;
   text-shadow: 2px 2px 4px black, 0 0 4px red;
   font-size: 12px;
