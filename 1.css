@@ -110,10 +110,11 @@
       text-shadow: -4px 2px 8px #000000, 0 0 4px red;
       text-decoration: none;
       font-size: 60px;
+      transition: 1s;
     }
     /* HIEU UNG : HOVER */
     h1.phan3:hover {
-      text-shadow: 4px -2px 8px #000000, 0 0 4px red;
+      text-shadow: 4px 2px 8px #000000, 0 0 4px red;
     }
     hr.hrphan3{
       margin-bottom: 30px;
